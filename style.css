@@ -49,3 +49,18 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
 }
+
+/* About */
+#about {
+    color: white;
+}
+
+#contact {
+    background-color:  rgb(19, 137, 150);
+    text-align: center;
+    color: white;
+}
+
+#contact a{
+    color: white;
+}
