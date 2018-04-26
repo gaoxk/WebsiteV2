@@ -1,9 +1,27 @@
 body, html {
     height: 100%;
     background-color: #333;
+    color:white;
 }
 
+h1{
+    font-family: 'Istok Web';
+    font-weight: 700;
+    transform: uppercase;
+}
 
+h2, h3, h4, a {
+    font-family: "inconsolata";
+}
+
+a {
+    font-size: 1.25em
+}
+
+p, li {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 1.25em;
+}
 /*turquoise: rgb(19, 137, 150)*/
 
 /* Style the navbar */
@@ -53,12 +71,21 @@ body, html {
 /* About */
 #about {
     color: white;
+    padding: 2.5%;
 }
 
+/*Community*/
+#communityheader{
+    background: url("FOTONICA_Background.png") fixed center center;
+    background-size: cover;
+    text-align: center;
+}
+
+/*Contact*/
 #contact {
     background-color:  rgb(19, 137, 150);
     text-align: center;
-    color: white;
+    padding-bottom: 2%;
 }
 
 #contact a{
