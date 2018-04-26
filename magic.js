@@ -32,7 +32,7 @@ window.onload = function(){
 
 //nav bar stuff
 $(window).scroll(function(){
-  if ($(window).scrollTop() < $(window).height() -50 ) {
+  if ($(window).scrollTop() < $(window).height() /2 ) {
     $('nav').fadeIn('fast');
   }else{
     $('nav').fadeOut('fast');
@@ -93,6 +93,9 @@ $(document).on("scroll", function () {
     }
     if (isScrolledIntoView($('#techcool'), $window)) {
       $('#techcool').addClass("animated fadeInUp");
+    }
+    if (isScrolledIntoView($('#extras'), $window)) {
+      $('#extras').addClass("animated fadeInUp");
     }
 });
 
