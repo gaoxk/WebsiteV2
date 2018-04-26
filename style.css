@@ -90,6 +90,10 @@ p, li {
     color: white;
     padding: 2.5%;
     background: url("./images/side.gif") fixed center center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color:  rgb(19, 137, 150);
 }
 #about-side{
     opacity: 0;

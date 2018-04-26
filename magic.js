@@ -32,7 +32,7 @@ window.onload = function(){
 
 
 $(window).scroll(function(){
-  if ($(window).scrollTop() < $(window).height()) {
+  if ($(window).scrollTop() < $(window).height()  ) {
     $('nav').show();
   }else{
     $('nav').hide();
