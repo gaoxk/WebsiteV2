@@ -32,17 +32,19 @@ window.onload = function(){
 
 
 $(window).scroll(function(){
-  if ($(window).scrollTop() < $(window).height()-50) {
-    $('#hey').show();
+  if ($(window).scrollTop() < $(window).height()) {
+    $('nav').show();
+  }else{
+    $('nav').hide();
   }
 });
 
 $( "body" ).mousemove(function( event ) {
-  if (!($(window).scrollTop() < $(window).height()-50)) {
+  if (!($(window).scrollTop() < $(window).height()+100)) {
     if (event.pageY - $(window).scrollTop() > 50) {
-     $('#hey').hide();
+     $('nav').hide();
     }else {
-      $('#hey').show();
+      $('nav').show();
     }
   }
   

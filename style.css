@@ -22,6 +22,15 @@ p, li {
     font-family: "Montserrat", Helvetica, sans-serif;
     font-size: 1.25em;
 }
+
+.row{
+    overflow: hidden; 
+}
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
 /*turquoise: rgb(19, 137, 150)*/
 
 
@@ -80,7 +89,10 @@ p, li {
 #about {
     color: white;
     padding: 2.5%;
-    background-color: rgb(19, 137, 150)
+    background: url("./images/side.gif") fixed center center;
+}
+#about-side{
+    opacity: 0;
 }
 
 /*Community*/
@@ -88,8 +100,8 @@ p, li {
     height: 100%;
 }
 
-#communityheader{
-    background: url("./images/FOTONICA_Background.png") fixed center center;
+#communityheader, .carousel{
+    background: url("./images/FOTONICA2.png") fixed center center;
     background-size: cover; 
     text-align: center;
 }
@@ -100,7 +112,7 @@ p, li {
 }
 
 .carousel-caption {
-    text-shadow: 2px 2px 2px black !important;
+    text-shadow: 2px 2px 2px black !important;   
 }
 
 
