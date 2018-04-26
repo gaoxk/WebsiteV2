@@ -50,7 +50,7 @@ $( "body" ).mousemove(function( event ) {
   
 });
 
-// Add scrollspy to <body>
+// nav bar navigation
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
   // Add smooth scrolling on all links inside the navbar
@@ -75,6 +75,26 @@ $( "body" ).mousemove(function( event ) {
     }  // End if
   });
 
+
+//fadeing in elements on scroll
+var $window = $(window);
+function isScrolledIntoView($elem, $window) {
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+$(document).on("scroll", function () {
+    if (isScrolledIntoView($('#letstalk'), $window)) {
+      $('#letstalk').addClass("animated fadeInUp");
+    }
+    if (isScrolledIntoView($('#techcool'), $window)) {
+      $('#techcool').addClass("animated fadeInUp");
+    }
+});
 
 
 };
