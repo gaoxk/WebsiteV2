@@ -32,19 +32,19 @@ window.onload = function(){
 
 
 $(window).scroll(function(){
-  if ($(window).scrollTop() < $(window).height()  ) {
-    $('nav').show();
+  if ($(window).scrollTop() < $(window).height() -50 ) {
+    $('nav').fadeIn('fast');
   }else{
-    $('nav').hide();
+    $('nav').fadeOut('fast');
   }
 });
 
 $( "body" ).mousemove(function( event ) {
-  if (!($(window).scrollTop() < $(window).height()+100)) {
+  if (!($(window).scrollTop() < $(window).height()+50)) {
     if (event.pageY - $(window).scrollTop() > 50) {
-     $('nav').hide();
+     $('nav').fadeOut('fast');
     }else {
-      $('nav').show();
+      $('nav').fadeIn('fast');
     }
   }
   
