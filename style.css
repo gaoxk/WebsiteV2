@@ -24,24 +24,32 @@ p, li {
 }
 /*turquoise: rgb(19, 137, 150)*/
 
+
 /* Style the navbar */
 .navbar {
-  overflow: hidden;
+  overflow: hidden; 
   background-color: rgb(0, 0, 0, .75); 
-  opacity: 1;
-  border: none;
 }
 
 /* Navbar links */
 .navbar a {
-  float: right;
-  display: block;
   color: rgb(19, 137, 150);
   text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
+} 
 
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+}
+.navbar:hover{
+    opacity:1;
+}
 /* The hero image */
 .hero-image {
     /* The image used */
@@ -95,6 +103,17 @@ p, li {
     text-shadow: 2px 2px 2px black !important;
 }
 
+
+#odd{
+    background-color: rgb(19, 137, 150);
+}
+
+#even{
+    background-color: black;
+}
+
+
+
 /*Contact*/
 #contact {
     background-color:  rgb(19, 137, 150);
@@ -104,4 +123,20 @@ p, li {
 
 #contact a{
     color: white;
+}
+
+.logo{
+    padding:2%;
+    max-width: 15%;
+    max-height: 15%;
+}
+
+.long{
+    max-width: 30%;
+}
+
+.cityline{
+    /*background: url("./images/cityline.png");*/
+    background-color: none;
+    max-height: 100%;
 }
