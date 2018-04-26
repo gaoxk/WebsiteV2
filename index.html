@@ -51,9 +51,9 @@
 
 
 <!-- Hero -->
-<div class="hero-image">
+<div class="hero-image" id="home">
   <div class="hero-text">
-    <h1>KRISTY GAO</h1>
+    <h1 style="font-size: 4.5em;">KRISTY GAO</h1>
 	<h3>Software Developer and Hackathon Organizer</h3>
     <h4>2A Computer Science Student @ University of Waterloo</h4>
     <p>Yep, thats me!</p>
@@ -62,77 +62,79 @@
 
 
 <!-- About -->
-<div class="container" style="background-color:red" id="about">
+<div class="container" id="about">
 	<div class = "row">
 		<div class = "col-sm-7">
-			<h1>I think tech is pretty cool.</h1>
-			<p>Programming was my favourite course in highschool! I loved making games and simple projects with my (then limited) knowledge. If you check out my resume or linkedin, you'll see that I've worked with a variety of different platforms and languages. My main stack is Java and Javascript.</p>
-			<p>I've been roped into the tech world and I'm currently in 2A Computer Science at the University of Waterloo, currently interested in Winter 2019 software development internshps.</p>
+			<h1 style="font-family: 'inconsolata';">I think tech is pretty cool.</h1>
+			<p>Ever since highschool I loved making games and simple projects with my (then limited) knowledge. If you check out my resume or linkedin, you'll see that I've worked with a wide variety of different platforms and languages, though I work with Java/C and Javascript most often.</p>
+			<p>I'm currently in 2A Computer Science at the University of Waterloo, currently interested in Winter 2019 software development internshps.</p>
 			<p>Some fun facts about myself:</p>
 			<ul>
 				<li>I love flamming hot cheetos</li>
 				<li>Once I set my oven on fire trying to cook a taco salad</li>
 				<li>I'm a master of flipping omelettes</li>
-				<li>My diet consists of way too much sriracha</li>
 			</ul>
+			<p>Hm... Alot of food related facts 🤔</p>
 		</div>
-		<div class = "col-sm-5" style="background-color: green">
-			 <img class="d-block w-100" src="ideal.JPG" alt="aboutpic">
+		<div class = "col-sm-5">
+			 <img class="d-block w-100" src="./images/ruby.png" style="height: 100%; width: 100%" alt="aboutpic">
 		</div>	
 	</div>
 </div>
 
 
-<!-- Projects -->
+<!-- ExtraCurriculars -->
 <div id="community">
 	<div class = "container-fluid" id="communityheader">
 		<h1>EXTRACURRICULARS</h1>
-		<h3>Ongoing initiatives I'm working on our the community.</h3>
+		<h3>Ongoing initiatives I'm working on in our community.</h3>
 	</div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="ideal.JPG" alt="htn">
-      <div class="carousel-caption">
-        <h3>Hack The North</h3>
-        <p>Logistics Coordinator for Canada's biggest hackathon</p>
-      </div>
-    </div>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#myCarousel" data-slide-to="1"></li>
+	    <li data-target="#myCarousel" data-slide-to="2"></li>
+	    <li data-target="#myCarousel" data-slide-to="3"></li>
+	  </ol>
 
-     <div class="item">
-      <img src="ideal.jpg" alt="New York">
-      <div class="carousel-caption">
-        <h3>Math Orientation</h3>
-        <p>Event planner (Devisor) for 2019 Math Orientation</p>
-      </div>
-    </div>
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img class="img-responsive center-block" src="./images/htn.png" alt="htn">
+	      <div class="carousel-caption">
+	        <h3>Hack The North</h3>
+	        <p>Logistics Coordinator for Canada's biggest hackathon</p>
+	      </div>
+	    </div>
 
-    <div class="item">
-      <img src="ideal.jpg" alt="sh">
-      <div class="carousel-caption">
-        <h3>Starter Hacks</h3>
-        <p>Lead Logistics Coordinator of the biggest beginner focused hackathon</p>
-      </div>
-    </div>
+	     <div class="item">
+	      <img class="img-responsive center-block" src="./images/moo.png" alt="moo">
+	      <div class="carousel-caption">
+	        <h3>Math Orientation</h3>
+	        <p>Event planner (Devisor) for 2019 Math Orientation</p>
+	      </div>
+	    </div>
 
-    <div class="item">
-      <img src="ideal.jpg" alt="cutc">
-      <div class="carousel-caption">
-        <h3>Canadian Undergraduate Technology Conference</h3>
-        <p>Campus Ambassador for the University of Waterloo</p>
-      </div>
-    </div>   
-  </div>
-</div>
+	    <div class="item">
+	      <img class="img-responsive center-block" src="./images/sh.png" alt="sh">
+	      <div class="carousel-caption">
+	        <h3>Starter Hacks</h3>
+	        <p>Lead Logistics Coordinator of the biggest beginner focused hackathon</p>
+	      </div>
+	    </div>
+
+	    <div class="item">
+	      <img class="img-responsive center-block" src="./images/cutc.png" alt="cutc">
+	      <div class="carousel-caption">
+	        <h3>Canadian Undergraduate Technology Conference</h3>
+	        <p>Campus Ambassador for the University of Waterloo</p>
+	      </div>
+	    </div>   
+	  </div>
+	</div>
+	<div class="container-fluid" id="communityheader" style="height:30%; width: 100%;"></div>
 </div>
 
 

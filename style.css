@@ -45,7 +45,7 @@ p, li {
 /* The hero image */
 .hero-image {
     /* The image used */
-    background-image: url("FOTONICA_Background.png");
+    background-image: url("./images/FOTONICA_Background.png");
 
     /* Set a specific height */
     height: 100%;
@@ -72,13 +72,27 @@ p, li {
 #about {
     color: white;
     padding: 2.5%;
+    background-color: rgb(19, 137, 150)
 }
 
 /*Community*/
+#community{
+    height: 100%;
+}
+
 #communityheader{
-    background: url("FOTONICA_Background.png") fixed center center;
-    background-size: cover;
+    background: url("./images/FOTONICA_Background.png") fixed center center;
+    background-size: cover; 
     text-align: center;
+}
+
+.carousel-inner{
+    height: 475px !important;
+    width: 100% !important;
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 2px black !important;
 }
 
 /*Contact*/
