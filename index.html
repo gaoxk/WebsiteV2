@@ -17,6 +17,9 @@
 	<!-- My CSS -->
 	<link rel="stylesheet" href="style.css">
 
+	<!-- Animate.CSS -->
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ledger" rel="stylesheet">
@@ -32,11 +35,12 @@
 
 <body>
 
+<!--nav navbar-nav list-hover-slide-->
 
 <nav class="navbar navbar-fixed-top" role="navigation" id="hey">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       <ul class="nav navbar-nav list-hover-slide">
+       <ul class="nav navbar-nav list-hover-slide" style="touch-action: pan-y;" id="myNavbar">
       	<li><a href="#home">HOME</a></li>
       	<li><a href="#about">ABOUT</a></li>
     <!--  	<li><a href="#community2">COMMUNITYv2</a></li> -->
@@ -53,9 +57,9 @@
 <div class="hero-image" id="home">
   <div class="hero-text">
     <h1 style="font-size: 4.5em;">KRISTY GAO</h1>
-	<h3>Software Developer and Hackathon Organizer</h3>
-    <h4>2A Computer Science Student @ University of Waterloo</h4>
-    <p>Yep, thats me!</p>
+	<h3 class="animated fadeInUp">Software Developer and Hackathon Organizer</h3>
+    <h4 class="animated fadeInUp">2A Computer Science Student @ University of Waterloo</h4>
+    <p class="animated fadeInUp">Yep, thats me!</p>
   </div>
 </div>
 
@@ -67,12 +71,12 @@
 		<div class = "col-sm-2" id="about-side"><li></li></div>
 
 		<div class = "col-sm-8" style="background-color: black">
-			<div class = "col-sm-7">
+			<div class = "col-sm-7" id="fademe">
 				<h1 style="font-family: 'inconsolata';">I think tech is pretty cool.</h1>
 				<p>Pushing code, hustiling hackathons, chilling out.</p>
 				<p>I'm currently in 2A Computer Science at the University of Waterloo, interested in Winter/Summer 2019 software development internshps.</p>
 				<p>Some fun facts about myself:</p>
-				<ul>
+				<ul >
 					<li>I love flamming hot cheetos</li>
 					<li>I once set my oven on fire trying to cook a taco salad</li>
 					<li>I'm a master of flipping omelettes</li>
@@ -175,7 +179,7 @@
 	<!-- I want to insert that old guelph skyline I made -->
 
 	<div class = "row">
-		<h2>Let's talk tech.</h2>
+		<h2 class="animated fadeInDown">Let's talk tech.</h2>
 		<p>(Or anything really! I promise I don't bite)</p>
 	</div>
 	<div class = "row">
