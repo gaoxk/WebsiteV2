@@ -30,6 +30,15 @@ function myFunction() {
 
 window.onload = function(){
 
+function load_screen(){
+  $(".loading").fadeOut(500);
+  $(".to-animate").addClass("animated fadeInUp");     
+}
+
+setTimeout(load_screen, 2000);  
+
+
+
 //nav bar stuff
 $(window).scroll(function(){
   if ($(window).scrollTop() < $(window).height() /2 ) {
@@ -72,7 +81,7 @@ $( "body" ).mousemove(function( event ) {
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    }  // End if
+    }  
   });
 
 
