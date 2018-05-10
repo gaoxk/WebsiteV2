@@ -35,9 +35,7 @@ function load_screen(){
   $(".to-animate").addClass("animated fadeInUp");     
 }
 
-setTimeout(load_screen, 2000);  
-
-
+setTimeout(load_screen, 2000);    
 
 //nav bar stuff
 $(window).scroll(function(){

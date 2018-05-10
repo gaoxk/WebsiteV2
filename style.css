@@ -12,16 +12,33 @@ h1{
 }
 
 h2{
-     font-family: 'eliantoregular';
+    font-family: 'eliantoregular';
 }
 
 h3, h4, a {
     font-family: "Montserrat", Helvetica, sans-serif;
+    text-decoration: none !important;
 }
+
 
 p, li {
     font-family: "Montserrat", Helvetica, sans-serif;
     font-size: 1.25em;
+}
+
+.btn{
+    background: transparent;
+    border-color: rgb(19, 137, 150);
+}   
+
+.btn a{
+    font-weight: bold; 
+    letter-spacing: 0.25em;
+    color:white;
+}
+
+.btn:hover {
+    background-color: rgb(19, 137, 150);
 }
 
 .row{
