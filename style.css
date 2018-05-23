@@ -94,34 +94,36 @@ p, li {
     border-radius: 40px;
  }
 
-/*Experiment*/
-#desc{
-    background-color: black;
+/*Work*/
+#work {
+    background: url("./images/cubes.png") fixed center center;
 }
 
-.pic{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: rgb(19, 137, 150);
+@media (max-width: 768px) {
+    #work h2, h3{
+        text-align: center;
+    }
+    #work p{
+        text-align: justify;
+    }
 }
 
-#pic1{
-    background: url("./images/htn.png");
+#work h1 {
+    text-align: center;
 }
-#pic2{
-    background: url("./images/sh.png");
+
+#work-box {
+    padding: 2%;
 }
-#pic3{
-    background: url("./images/sh.png");
-}
-#pic4{
-    background: url("./images/cutc.png");
+
+#work img {
+    display: block;
+    margin: 0 auto;
+    max-width: 230px;
 }
 
 /*Community*/
-#community{
+#community {
     height: 100%;
     background: url("./images/FOTONICA2.png") fixed center center;
 }
