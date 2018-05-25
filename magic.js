@@ -1,11 +1,9 @@
-window.onload = function(){
-
-console.log(window.innerWidth);
+window.onload = () => {
 
 var $window = $(window);
 var $body = $('body');
 
-function load_screen(){
+load_screen = () => {
   $(".loading").fadeOut(500);
   $(".to-animate").addClass("animated fadeInUp");     
 }
@@ -21,7 +19,7 @@ $window.scroll(function(){
   }
 });
 
-$body.mousemove(function( event ) {
+$body.mousemove( event => {
   if (!($window.scrollTop() < $window.height()-50)) {
     if (event.pageY - $window.scrollTop() > 50) {
      $('nav').fadeOut('fast');
@@ -54,7 +52,7 @@ $("#myNavbar a").on('click', function(event) {
 
 
 //fadeing in elements on scroll
-function isScrolledIntoView($elem, $window) {
+isScrolledIntoView = ($elem, $window)  =>{
     var docViewTop = $window.scrollTop();
     var docViewBottom = docViewTop + $window.height();
     var elemTop = $elem.offset().top;
@@ -71,6 +69,9 @@ $(document).on("scroll", function () {
     }
     if (isScrolledIntoView($('#extras'), $window)) {
       $('#extras').addClass("animated fadeInUp");
+    }
+    if (isScrolledIntoView($('#workimg'), $window)) {
+      $('#workimg').addClass("animated fadeInUp");
     }
 });
 
