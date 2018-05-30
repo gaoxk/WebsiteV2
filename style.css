@@ -27,10 +27,10 @@ p, li {
 .btn {
     background: transparent;
     border-color: rgb(19, 137, 150);
-}   
+}
 
 .btn a {
-    font-weight: bold; 
+    font-weight: bold;
     letter-spacing: 0.25em;
     color:white;
 }
@@ -40,17 +40,12 @@ p, li {
 }
 
 .row {
-    overflow: hidden; 
+    overflow: hidden;
 }
 [class*="col-"]{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
 }
-
-
-/*turquoise: rgb(19, 137, 150)*/
-
-
 
 /* Hero */
 .hero-image {
@@ -143,7 +138,7 @@ p, li {
 }
 
 #communityheader, .carousel {
-    background-size: cover; 
+    background-size: cover;
     text-align: center;
 }
 
@@ -153,7 +148,7 @@ p, li {
 }
 
 .carousel-caption {
-    text-shadow: 2px 2px 2px black !important;   
+    text-shadow: 2px 2px 2px black !important;
 }
 
 /*Contact*/
@@ -165,13 +160,13 @@ p, li {
 
 @media (max-width: 768px) {
     #contact {
-        height: 100%;
+        height: 60%;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) { 
+@media (min-width: 992px) and (max-width: 1200px) {
     #contact {
-        height: 50%;
+        height: 45%;
     }
 }
 
